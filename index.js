@@ -20,6 +20,23 @@ var wraph1Tags = function(page){
         // Remove the image
         $(this).remove();
     });
+
+    $('h5').each(function(){
+
+        var h1Wrapper = $('<div style="text-align: center;">');
+
+        var h5 = $(this).text();
+
+        var $h5tag = $('<h5>'+h5);
+
+        h5Wrapper.append($h5tag);
+        
+        $(this).before(h5Wrapper);
+        
+        // Remove the image
+        $(this).remove();
+    });
+
     
     page.content = $.html();
 
