@@ -17,13 +17,12 @@ var wraph1Tags = function(page){
         
         $(this).before(h1Wrapper);
         
-        // Remove the image
         $(this).remove();
     });
 
     $('h5').each(function(){
 
-        var h1Wrapper = $('<div style="text-align: center;">');
+        var h5Wrapper = $('<div style="text-align: center;">');
 
         var h5 = $(this).text();
 
@@ -32,8 +31,7 @@ var wraph1Tags = function(page){
         h5Wrapper.append($h5tag);
         
         $(this).before(h5Wrapper);
-        
-        // Remove the image
+
         $(this).remove();
     });
 
