@@ -35,6 +35,21 @@ var wraph1Tags = function(page){
         $(this).remove();
     });
 
+    $('h6').each(function(){
+
+        var h6Wrapper = $('<div style="text-align: center;">');
+
+        var h6 = $(this).text();
+
+        var $h6tag = $('<h6>'+h6);
+
+        h6Wrapper.append($h6tag);
+        
+        $(this).before(h6Wrapper);
+
+        $(this).remove();
+    });
+
     
     page.content = $.html();
 
