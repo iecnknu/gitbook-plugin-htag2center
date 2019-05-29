@@ -7,7 +7,7 @@ var wraph1Tags = function(page){
 
     $('h1').each(function(){
 
-        var h1Wrapper = $('<div style="text-align: center;">');
+        var h1Wrapper = $('<div style="text-align: center;line-height: 2px;">');
 
         var h1 = $(this).text();
 
@@ -22,7 +22,7 @@ var wraph1Tags = function(page){
 
     $('h5').each(function(){
 
-        var h5Wrapper = $('<div style="text-align: center;">');
+        var h5Wrapper = $('<div style="text-align: center;line-height: 2px;">');
 
         var h5 = $(this).text();
 
